@@ -15,12 +15,15 @@ namespace PetonaDesktop
         public Form1()
         {
             InitializeComponent();
-            // Zuhal Ganteng woiii
-            // Ashiappp
-            // besteh
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
         {
 
         }
