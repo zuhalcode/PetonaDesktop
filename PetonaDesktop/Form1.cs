@@ -15,6 +15,8 @@ namespace PetonaDesktop
         public Form1()
         {
             InitializeComponent();
+            // Zuhal Ganteng woiii
+            // Ashiappp
         }
 
         private void Form1_Load(object sender, EventArgs e)
