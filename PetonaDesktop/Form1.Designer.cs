@@ -33,8 +33,8 @@
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HomeBtn = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.ShopBtn = new FontAwesome.Sharp.IconButton();
+            this.ContactBtn = new FontAwesome.Sharp.IconButton();
             this.PanelMenu.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,8 +43,8 @@
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.LimeGreen;
-            this.PanelMenu.Controls.Add(this.iconButton2);
-            this.PanelMenu.Controls.Add(this.iconButton1);
+            this.PanelMenu.Controls.Add(this.ContactBtn);
+            this.PanelMenu.Controls.Add(this.ShopBtn);
             this.PanelMenu.Controls.Add(this.HomeBtn);
             this.PanelMenu.Controls.Add(this.PanelLogo);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -93,47 +93,47 @@
             this.HomeBtn.UseVisualStyleBackColor = true;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
-            // iconButton1
+            // ShopBtn
             // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 38;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 168);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
-            this.iconButton1.Size = new System.Drawing.Size(241, 55);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "      SHOP";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.ShopBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ShopBtn.FlatAppearance.BorderSize = 0;
+            this.ShopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShopBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShopBtn.ForeColor = System.Drawing.Color.White;
+            this.ShopBtn.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.ShopBtn.IconColor = System.Drawing.Color.White;
+            this.ShopBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ShopBtn.IconSize = 38;
+            this.ShopBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ShopBtn.Location = new System.Drawing.Point(0, 168);
+            this.ShopBtn.Name = "ShopBtn";
+            this.ShopBtn.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.ShopBtn.Size = new System.Drawing.Size(241, 55);
+            this.ShopBtn.TabIndex = 2;
+            this.ShopBtn.Text = "      SHOP";
+            this.ShopBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ShopBtn.UseVisualStyleBackColor = true;
             // 
-            // iconButton2
+            // ContactBtn
             // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Phone;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 38;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 223);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
-            this.iconButton2.Size = new System.Drawing.Size(241, 55);
-            this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "      CONTACT";
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.ContactBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ContactBtn.FlatAppearance.BorderSize = 0;
+            this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactBtn.ForeColor = System.Drawing.Color.White;
+            this.ContactBtn.IconChar = FontAwesome.Sharp.IconChar.Phone;
+            this.ContactBtn.IconColor = System.Drawing.Color.White;
+            this.ContactBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ContactBtn.IconSize = 38;
+            this.ContactBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ContactBtn.Location = new System.Drawing.Point(0, 223);
+            this.ContactBtn.Name = "ContactBtn";
+            this.ContactBtn.Padding = new System.Windows.Forms.Padding(5, 0, 10, 0);
+            this.ContactBtn.Size = new System.Drawing.Size(241, 55);
+            this.ContactBtn.TabIndex = 3;
+            this.ContactBtn.Text = "      CONTACT";
+            this.ContactBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ContactBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -157,8 +157,8 @@
         private FontAwesome.Sharp.IconButton HomeBtn;
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton ContactBtn;
+        private FontAwesome.Sharp.IconButton ShopBtn;
     }
 }
 
