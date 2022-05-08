@@ -15,6 +15,7 @@ namespace PetonaDesktop
         public Form1()
         {
             InitializeComponent();
+            // Zuhal ganteng
             
         }
 
