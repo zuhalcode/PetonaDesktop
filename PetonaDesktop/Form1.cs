@@ -22,12 +22,22 @@ namespace PetonaDesktop
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            HomeContent.BringToFront();
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
+            HomeContent.BringToFront();
+        }
 
+        private void ShopBtn_Click(object sender, EventArgs e)
+        {
+            ShopContent.BringToFront();
+        }
+
+        private void ContactBtn_Click(object sender, EventArgs e)
+        {
+            ContactContent.BringToFront();
         }
     }
 }
