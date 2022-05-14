@@ -34,10 +34,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.label1.Location = new System.Drawing.Point(17, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 58);
+            this.label1.Size = new System.Drawing.Size(210, 69);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
             // 
@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "CustomContent1";
-            this.Size = new System.Drawing.Size(872, 569);
+            this.Size = new System.Drawing.Size(1039, 701);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -53,7 +53,7 @@
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(241, 530);
+            this.PanelMenu.Size = new System.Drawing.Size(241, 744);
             this.PanelMenu.TabIndex = 0;
             // 
             // ContactBtn
@@ -142,30 +142,31 @@
             // 
             // ContactContent
             // 
-            this.ContactContent.Location = new System.Drawing.Point(239, 0);
+            this.ContactContent.Location = new System.Drawing.Point(239, -3);
             this.ContactContent.Name = "ContactContent";
-            this.ContactContent.Size = new System.Drawing.Size(794, 530);
+            this.ContactContent.Size = new System.Drawing.Size(974, 744);
             this.ContactContent.TabIndex = 3;
             // 
             // ShopContent
             // 
+            this.ShopContent.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.ShopContent.Location = new System.Drawing.Point(239, 0);
             this.ShopContent.Name = "ShopContent";
-            this.ShopContent.Size = new System.Drawing.Size(794, 530);
+            this.ShopContent.Size = new System.Drawing.Size(2000, 1000);
             this.ShopContent.TabIndex = 2;
             // 
             // HomeContent
             // 
             this.HomeContent.Location = new System.Drawing.Point(239, 0);
             this.HomeContent.Name = "HomeContent";
-            this.HomeContent.Size = new System.Drawing.Size(794, 530);
+            this.HomeContent.Size = new System.Drawing.Size(978, 744);
             this.HomeContent.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 530);
+            this.ClientSize = new System.Drawing.Size(1218, 744);
             this.Controls.Add(this.ContactContent);
             this.Controls.Add(this.ShopContent);
             this.Controls.Add(this.HomeContent);
