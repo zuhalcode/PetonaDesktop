@@ -17,7 +17,7 @@ namespace PetonaDesktop
 {
     public partial class ShopContent : UserControl
     {
-        string connStr = "server=127.0.0.1;port=3366;database=petona;uid=userpetona;pwd=user;";
+        string connStr = "server=sql6.freesqldatabase.com;port=3306;database=sql6492184;uid=sql6492184;pwd=MxvYZwjszD;";
         MySqlConnection conn;
         public ShopContent()
         {
