@@ -36,5 +36,10 @@ namespace PetonaDesktop
         {
             ContactContent.BringToFront();
         }
+
+        private void ContactContent_Load(object sender, EventArgs e)
+        {
+            // Gagah Rizky   
+        }
     }
 }
