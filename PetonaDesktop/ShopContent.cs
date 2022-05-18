@@ -76,30 +76,44 @@ namespace PetonaDesktop
 
         private void ShopContent_Load(object sender, EventArgs e)
         {
+            // koneksi ke mysql
             if (MysqlConnect())
             {
                 string query = "SELECT * FROM products";
                 var cmd = new MySqlCommand(query, conn);
                 var reader = cmd.ExecuteReader();
+                Panel[] panels = new Panel[10];
 
+                // read structure tabel products
                 while (reader.Read())
                 {
                     string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
-                    //ShopFlowPanel.Controls.Add(new Panel()
-                    //{
-                        
-                    //});
-                    ShopFlowPanel.Controls.Add(new PictureBox()
+                    Panel newPanel = new Panel();
+                    newPanel.Controls.Add(new PictureBox()
                     {
                         ImageLocation = image,
                         Width = 250,
                         Height = 300,
-                        SizeMode = PictureBoxSizeMode.Zoom,
+                        SizeMode = PictureBoxSizeMode.Zoom
                     });
+                    
                 }
                 MysqlDisconnect();
             }
         }
+
+        //private void CreatePanels(int Number)
+        //{
+        //    for(int i = 0; i < Number; i++)
+        //    {
+        //        Panel temp = new Panel();
+        //        this.Controls.Add(temp);
+        //        temp.Width = 250;
+        //        temp.Height = 300;
+        //        temp.BackColor = Color.Red;
+        //        ProductPanel.Controls.Add(temp);
+        //    }
+        //}
     }
 }
 
