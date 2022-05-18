@@ -79,7 +79,7 @@ namespace PetonaDesktop
             // koneksi ke mysql
             if (MysqlConnect())
             {
-                string query = "SELECT * FROM products";
+                string query = "SELECT * FROM products where id>1";
                 var cmd = new MySqlCommand(query, conn);
                 var reader = cmd.ExecuteReader();
                 

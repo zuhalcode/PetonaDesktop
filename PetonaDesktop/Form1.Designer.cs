@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.ContactBtn = new FontAwesome.Sharp.IconButton();
             this.ShopBtn = new FontAwesome.Sharp.IconButton();
@@ -37,7 +36,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContactContent = new PetonaDesktop.ContactContent();
             this.ShopContent = new PetonaDesktop.ShopContent();
-            this.HomeContent = new PetonaDesktop.HomeContent();
             this.PanelMenu.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -133,7 +131,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "http://127.0.0.1:8000/storage/product-images/logo.png";
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 78);
@@ -159,14 +157,6 @@
             this.ShopContent.Size = new System.Drawing.Size(1587, 1145);
             this.ShopContent.TabIndex = 2;
             // 
-            // HomeContent
-            // 
-            this.HomeContent.Location = new System.Drawing.Point(238, 0);
-            this.HomeContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.HomeContent.Name = "HomeContent";
-            this.HomeContent.Size = new System.Drawing.Size(1587, 1145);
-            this.HomeContent.TabIndex = 1;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -174,7 +164,6 @@
             this.ClientSize = new System.Drawing.Size(1827, 1050);
             this.Controls.Add(this.ContactContent);
             this.Controls.Add(this.ShopContent);
-            this.Controls.Add(this.HomeContent);
             this.Controls.Add(this.PanelMenu);
             this.Name = "Form1";
             this.Text = "PETONA";
