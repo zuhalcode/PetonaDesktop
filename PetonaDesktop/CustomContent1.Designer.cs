@@ -46,8 +46,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
+            this.Location = new System.Drawing.Point(238, 0);
             this.Name = "CustomContent1";
-            this.Size = new System.Drawing.Size(1039, 701);
+            this.Size = new System.Drawing.Size(1587, 1145);
             this.ResumeLayout(false);
             this.PerformLayout();
 
