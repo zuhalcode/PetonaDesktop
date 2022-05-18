@@ -37,7 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContactContent = new PetonaDesktop.ContactContent();
             this.ShopContent = new PetonaDesktop.ShopContent();
-            this.HomeContent = new PetonaDesktop.CustomContent1();
+            this.HomeContent = new PetonaDesktop.HomeContent();
             this.PanelMenu.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -194,7 +194,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton ContactBtn;
         private FontAwesome.Sharp.IconButton ShopBtn;
-        private CustomContent1 HomeContent;
+        private HomeContent HomeContent;
         private ShopContent ShopContent;
         private ContactContent ContactContent;
     }

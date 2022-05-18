@@ -1,6 +1,6 @@
 ﻿namespace PetonaDesktop
 {
-    partial class CustomContent1
+    partial class HomeContent
     {
         /// <summary> 
         /// Required designer variable.

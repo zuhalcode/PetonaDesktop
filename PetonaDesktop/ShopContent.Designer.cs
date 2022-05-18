@@ -30,14 +30,11 @@
         {
             this.ShopFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ScrollBar = new System.Windows.Forms.VScrollBar();
-            this.ProductPanel = new System.Windows.Forms.Panel();
-            this.ShopFlowPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShopFlowPanel
             // 
             this.ShopFlowPanel.BackColor = System.Drawing.Color.Green;
-            this.ShopFlowPanel.Controls.Add(this.ProductPanel);
             this.ShopFlowPanel.Location = new System.Drawing.Point(3, 111);
             this.ShopFlowPanel.Name = "ShopFlowPanel";
             this.ShopFlowPanel.Size = new System.Drawing.Size(1550, 800);
@@ -51,14 +48,6 @@
             this.ScrollBar.TabIndex = 10;
             this.ScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ScrollBar_Scroll_1);
             // 
-            // ProductPanel
-            // 
-            this.ProductPanel.BackColor = System.Drawing.Color.White;
-            this.ProductPanel.Location = new System.Drawing.Point(3, 3);
-            this.ProductPanel.Name = "ProductPanel";
-            this.ProductPanel.Size = new System.Drawing.Size(300, 500);
-            this.ProductPanel.TabIndex = 0;
-            // 
             // ShopContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -69,7 +58,6 @@
             this.Name = "ShopContent";
             this.Size = new System.Drawing.Size(1920, 1080);
             this.Load += new System.EventHandler(this.ShopContent_Load);
-            this.ShopFlowPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -77,6 +65,5 @@
         #endregion
         private System.Windows.Forms.FlowLayoutPanel ShopFlowPanel;
         private System.Windows.Forms.VScrollBar ScrollBar;
-        private System.Windows.Forms.Panel ProductPanel;
     }
 }

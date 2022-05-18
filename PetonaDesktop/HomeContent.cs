@@ -14,10 +14,10 @@ using Newtonsoft.Json;
 
 namespace PetonaDesktop
 {
-    public partial class CustomContent1 : UserControl
+    public partial class HomeContent : UserControl
     {
         
-        public CustomContent1()
+        public HomeContent()
         {
             InitializeComponent();
         }
