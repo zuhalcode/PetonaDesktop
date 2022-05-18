@@ -82,22 +82,32 @@ namespace PetonaDesktop
                 string query = "SELECT * FROM products";
                 var cmd = new MySqlCommand(query, conn);
                 var reader = cmd.ExecuteReader();
-                Panel[] panels = new Panel[10];
+                reader.Read();  
+                string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
+                Console.WriteLine(image);
+                Panel newPanel = new Panel();
+                newPanel.Controls.Add(new PictureBox()
+                {
+                    ImageLocation = image,
+                    Width = 250,
+                    Height = 300,
+                    SizeMode = PictureBoxSizeMode.Zoom
+                });
 
                 // read structure tabel products
-                while (reader.Read())
-                {
-                    string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
-                    Panel newPanel = new Panel();
-                    newPanel.Controls.Add(new PictureBox()
-                    {
-                        ImageLocation = image,
-                        Width = 250,
-                        Height = 300,
-                        SizeMode = PictureBoxSizeMode.Zoom
-                    });
-                    
-                }
+                //while (reader.Read())
+                //{
+                //    string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
+                //    Panel newPanel = new Panel();
+                //    newPanel.Controls.Add(new PictureBox()
+                //    {
+                //        ImageLocation = image,
+                //        Width = 250,
+                //        Height = 300,
+                //        SizeMode = PictureBoxSizeMode.Zoom
+                //    });
+
+                //}
                 MysqlDisconnect();
             }
         }
