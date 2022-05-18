@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContactContent = new PetonaDesktop.ContactContent();
             this.ShopContent = new PetonaDesktop.ShopContent();
+            this.HomeContent = new PetonaDesktop.HomeContent();
             this.PanelMenu.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -118,7 +119,6 @@
             this.HomeBtn.Text = "      HOME";
             this.HomeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.HomeBtn.UseVisualStyleBackColor = true;
-            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // PanelLogo
             // 
@@ -141,7 +141,7 @@
             // ContactContent
             // 
             this.ContactContent.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ContactContent.Location = new System.Drawing.Point(238, 0);
+            this.ContactContent.Location = new System.Drawing.Point(358, 0);
             this.ContactContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ContactContent.Name = "ContactContent";
             this.ContactContent.Size = new System.Drawing.Size(1587, 1145);
@@ -151,19 +151,27 @@
             // ShopContent
             // 
             this.ShopContent.Cursor = System.Windows.Forms.Cursors.PanSW;
-            this.ShopContent.Location = new System.Drawing.Point(238, 0);
+            this.ShopContent.Location = new System.Drawing.Point(358, 0);
             this.ShopContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ShopContent.Name = "ShopContent";
             this.ShopContent.Size = new System.Drawing.Size(1587, 1145);
             this.ShopContent.TabIndex = 2;
+            // 
+            // HomeContent
+            // 
+            this.HomeContent.Location = new System.Drawing.Point(358, 0);
+            this.HomeContent.Name = "HomeContent";
+            this.HomeContent.Size = new System.Drawing.Size(1587, 1145);
+            this.HomeContent.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1827, 1050);
-            this.Controls.Add(this.ContactContent);
+            this.Controls.Add(this.HomeContent);
             this.Controls.Add(this.ShopContent);
+            this.Controls.Add(this.ContactContent);
             this.Controls.Add(this.PanelMenu);
             this.Name = "Form1";
             this.Text = "PETONA";
@@ -183,9 +191,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton ContactBtn;
         private FontAwesome.Sharp.IconButton ShopBtn;
-        private HomeContent HomeContent;
         private ShopContent ShopContent;
         private ContactContent ContactContent;
+        private HomeContent HomeContent;
     }
 }
 

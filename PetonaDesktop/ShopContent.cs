@@ -23,24 +23,29 @@ namespace PetonaDesktop
         {
             InitializeComponent();
 
+            // menghitung pergerakan scrolling content
             ScrollBar.Value = ShopFlowPanel.VerticalScroll.Value;
             ScrollBar.Minimum = ShopFlowPanel.VerticalScroll.Minimum;
             ScrollBar.Maximum = ShopFlowPanel.VerticalScroll.Maximum;
 
+            // perubahan scrolling content
             ShopFlowPanel.ControlAdded += ShopFlowPanel_ControlAdded;
             ShopFlowPanel.ControlRemoved -= ShopFlowPanel_ControlRemoved;
         }
 
+        // Inisialisasi nilai maximum content untuk scrolling
         private void ShopFlowPanel_ControlAdded(object sender, ControlEventArgs e)
         {
             ScrollBar.Maximum = ShopFlowPanel.VerticalScroll.Maximum;
         }
 
+        // Inisialisasi nilai minimum content untuk scrolling
         private void ShopFlowPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
             ScrollBar.Minimum = ShopFlowPanel.VerticalScroll.Minimum;
         }
 
+        // koneksi ke mysql
         private bool MysqlConnect()
         {
             conn = new MySqlConnection(connStr);
@@ -56,37 +61,35 @@ namespace PetonaDesktop
             }
         }
 
+        // menutup koneksi mysql
         private void MysqlDisconnect()
         {
             conn.Close();
         }
 
-        private void TesConnect_Click(object sender, EventArgs e)
-        {
-            if (MysqlConnect())
-            {
-                MessageBox.Show("Terkoneksi dengan database");
-            }
-        }
-
+        // fungsi untuk scroll content
         private void ScrollBar_Scroll_1(object sender, ScrollEventArgs e)
         {
             ShopFlowPanel.VerticalScroll.Value = ScrollBar.Value;
         }
 
+        // ketika ShopContent pertama kali diload
         private void ShopContent_Load(object sender, EventArgs e)
         {
-            // koneksi ke mysql
+            // cek koneksi mysql
             if (MysqlConnect())
             {
-                string query = "SELECT * FROM products where id>1";
-                var cmd = new MySqlCommand(query, conn);
-                var reader = cmd.ExecuteReader();
+                string query = "SELECT * FROM products where id>1"; // table query mysql
+                var cmd = new MySqlCommand(query, conn); // koneksi ke mysql
+                var reader = cmd.ExecuteReader(); // fungsi untuk read table mysql
                 
                 // read structure tabel products
                 while (reader.Read())
                 {
+                    // mengambil nama image
                     string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
+
+                    // membuat komponen product
                     Panel newPanel = new Panel()
                     {
                         Width = 298,
@@ -99,7 +102,8 @@ namespace PetonaDesktop
                         ImageLocation = image,
                         Width = 250,
                         Height = 300,
-                        SizeMode = PictureBoxSizeMode.Zoom
+                        SizeMode = PictureBoxSizeMode.Zoom,
+                        Size = new Size(100,100)
                     });
 
                 }
