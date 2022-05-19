@@ -111,11 +111,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeContent.cs">
+    <Compile Include="Input Data Jual.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HomeContent.Designer.cs">
-      <DependentUpon>HomeContent.cs</DependentUpon>
+    <Compile Include="Input Data Jual.Designer.cs">
+      <DependentUpon>Input Data Jual.cs</DependentUpon>
     </Compile>
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
@@ -126,6 +126,12 @@
     <Compile Include="ShopContent.Designer.cs">
       <DependentUpon>ShopContent.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeContent.Designer.cs">
+      <DependentUpon>HomeContent.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ContactContent.resx">
       <DependentUpon>ContactContent.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -133,8 +139,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeContent.resx">
-      <DependentUpon>HomeContent.cs</DependentUpon>
+    <EmbeddedResource Include="Input Data Jual.resx">
+      <DependentUpon>Input Data Jual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,6 +153,9 @@
     </Compile>
     <EmbeddedResource Include="ShopContent.resx">
       <DependentUpon>ShopContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeContent.resx">
+      <DependentUpon>HomeContent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
