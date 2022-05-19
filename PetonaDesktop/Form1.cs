@@ -15,24 +15,34 @@ namespace PetonaDesktop
         public Form1()
         {
             InitializeComponent();
+
+            // inisialisasi posisi awal setiap konten
+            ShopContent.Location = new Point(270, 0);
+            ShopContent.Size = new Size(1650, 1145);
+
+            ContactContent.Location = new Point(270, 0);
+            ContactContent.Size = new Size(1650, 1145);
+
+            HomeContent.BringToFront();
+            HomeContent.Location = new Point(270, 0);
+            HomeContent.Size = new Size(1650, 1145);
         }
 
+        // menempatkan konten ke posisi paling depan
         private void ShopBtn_Click(object sender, EventArgs e)
         {
             ShopContent.BringToFront();
+           
         }
 
+        // menempatkan konten ke posisi paling depan
         private void ContactBtn_Click(object sender, EventArgs e)
         {
             ContactContent.BringToFront();
         }
 
-        private void ContactContent_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        // menempatkan konten ke posisi paling depan
+        private void HomeBtn_Click(object sender, EventArgs e)
         {
             HomeContent.BringToFront();
         }

@@ -30,34 +30,23 @@
         {
             this.ShopFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ScrollBar = new System.Windows.Forms.VScrollBar();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ShopFlowPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShopFlowPanel
             // 
-            this.ShopFlowPanel.BackColor = System.Drawing.Color.Green;
-            this.ShopFlowPanel.Controls.Add(this.panel1);
+            this.ShopFlowPanel.BackColor = System.Drawing.Color.White;
             this.ShopFlowPanel.Location = new System.Drawing.Point(3, 111);
             this.ShopFlowPanel.Name = "ShopFlowPanel";
-            this.ShopFlowPanel.Size = new System.Drawing.Size(1550, 800);
+            this.ShopFlowPanel.Size = new System.Drawing.Size(1600, 800);
             this.ShopFlowPanel.TabIndex = 9;
             // 
             // ScrollBar
             // 
-            this.ScrollBar.Location = new System.Drawing.Point(1556, 111);
+            this.ScrollBar.Location = new System.Drawing.Point(1606, 111);
             this.ScrollBar.Name = "ScrollBar";
-            this.ScrollBar.Size = new System.Drawing.Size(26, 689);
+            this.ScrollBar.Size = new System.Drawing.Size(26, 800);
             this.ScrollBar.TabIndex = 10;
             this.ScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ScrollBar_Scroll_1);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 440);
-            this.panel1.TabIndex = 0;
             // 
             // ShopContent
             // 
@@ -69,7 +58,6 @@
             this.Name = "ShopContent";
             this.Size = new System.Drawing.Size(1920, 1080);
             this.Load += new System.EventHandler(this.ShopContent_Load);
-            this.ShopFlowPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -77,6 +65,5 @@
         #endregion
         private System.Windows.Forms.FlowLayoutPanel ShopFlowPanel;
         private System.Windows.Forms.VScrollBar ScrollBar;
-        private System.Windows.Forms.Panel panel1;
     }
 }

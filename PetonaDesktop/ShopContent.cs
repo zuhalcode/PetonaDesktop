@@ -89,24 +89,82 @@ namespace PetonaDesktop
                     // mengambil nama image
                     string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
 
+                    // mengambil nama produk
+                    string name = reader.GetString(2);
+
+                    // mengambil banyak produk
+                    string amount = reader.GetString(4);
+
+                    // mengambil harga produk
+                    string price = reader.GetString(5);
+
+
                     // membuat komponen product
                     Panel newPanel = new Panel()
                     {
-                        Width = 298,
+                        Width = 300,
                         Height = 455,
-                        BackColor = Color.Blue,
+                        BackColor = Color.White,
                     };
+
+                    // menempatkan panel
                     ShopFlowPanel.Controls.Add(newPanel);
+
+                    // membuat gambar produk
                     newPanel.Controls.Add(new PictureBox()
                     {
                         ImageLocation = image,
-                        Width = 250,
+                        Width = 300,
                         Height = 300,
                         SizeMode = PictureBoxSizeMode.Zoom,
-                        Size = new Size(100,100)
+                        Size = new Size(300,200)
+                    });
+
+                    // membuat label nama produk
+                    newPanel.Controls.Add(new Label()
+                    {
+                        Text = name,
+                        Location = new Point(81, 216),
+                        Size = new Size(150, 29),
+                        Font = new Font("Microsoft Sans Serif", 12)
+
+                    });
+
+                    // membuat label pieces
+                    newPanel.Controls.Add(new Label()
+                    {
+                        Text = amount + " pieces",
+                        Location = new Point(103, 245),
+                        Size = new Size(77, 20),
+                        Font = new Font("Microsoft Sans Serif", 8)
+                    });
+
+                    // membuat label harga
+                    newPanel.Controls.Add(new Label()
+                    {
+                        Text = "Rp. " + price + " /kg",
+                        Location = new Point(67, 362),
+                        Width =  166,
+                        Height = 29,
+                        Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold)
+                    });
+
+                    // membuat tombol
+                    newPanel.Controls.Add(new Button()
+                    {
+                        Text = "Masukkan Troli",
+                        Width = 202,
+                        Height = 31,
+                        Location = new Point(46, 399),
+                        Font = new Font("Microsoft Sans Serif", 8, FontStyle.Bold),
+                        ForeColor = Color.White,
+                        FlatStyle = FlatStyle.Flat,
+                        BackColor = Color.Green,
                     });
 
                 }
+
+                // keluar koneksi mysql
                 MysqlDisconnect();
             }
         }

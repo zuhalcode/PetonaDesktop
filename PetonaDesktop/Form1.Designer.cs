@@ -34,9 +34,9 @@
             this.HomeBtn = new FontAwesome.Sharp.IconButton();
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ContactContent = new PetonaDesktop.ContactContent();
-            this.ShopContent = new PetonaDesktop.ShopContent();
             this.HomeContent = new PetonaDesktop.HomeContent();
+            this.ShopContent = new PetonaDesktop.ShopContent();
+            this.ContactContent = new PetonaDesktop.ContactContent();
             this.PanelMenu.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,7 +52,7 @@
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(362, 1050);
+            this.PanelMenu.Size = new System.Drawing.Size(267, 1050);
             this.PanelMenu.TabIndex = 0;
             // 
             // ContactBtn
@@ -70,7 +70,7 @@
             this.ContactBtn.Location = new System.Drawing.Point(0, 222);
             this.ContactBtn.Name = "ContactBtn";
             this.ContactBtn.Padding = new System.Windows.Forms.Padding(4, 0, 10, 0);
-            this.ContactBtn.Size = new System.Drawing.Size(362, 55);
+            this.ContactBtn.Size = new System.Drawing.Size(267, 55);
             this.ContactBtn.TabIndex = 3;
             this.ContactBtn.Text = "      CONTACT";
             this.ContactBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -92,7 +92,7 @@
             this.ShopBtn.Location = new System.Drawing.Point(0, 167);
             this.ShopBtn.Name = "ShopBtn";
             this.ShopBtn.Padding = new System.Windows.Forms.Padding(4, 0, 10, 0);
-            this.ShopBtn.Size = new System.Drawing.Size(362, 55);
+            this.ShopBtn.Size = new System.Drawing.Size(267, 55);
             this.ShopBtn.TabIndex = 2;
             this.ShopBtn.Text = "      SHOP";
             this.ShopBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -114,11 +114,12 @@
             this.HomeBtn.Location = new System.Drawing.Point(0, 112);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Padding = new System.Windows.Forms.Padding(4, 0, 10, 0);
-            this.HomeBtn.Size = new System.Drawing.Size(362, 55);
+            this.HomeBtn.Size = new System.Drawing.Size(267, 55);
             this.HomeBtn.TabIndex = 1;
             this.HomeBtn.Text = "      HOME";
             this.HomeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.HomeBtn.UseVisualStyleBackColor = true;
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // PanelLogo
             // 
@@ -126,7 +127,7 @@
             this.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelLogo.Location = new System.Drawing.Point(0, 0);
             this.PanelLogo.Name = "PanelLogo";
-            this.PanelLogo.Size = new System.Drawing.Size(362, 112);
+            this.PanelLogo.Size = new System.Drawing.Size(267, 112);
             this.PanelLogo.TabIndex = 0;
             // 
             // pictureBox1
@@ -138,15 +139,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ContactContent
+            // HomeContent
             // 
-            this.ContactContent.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ContactContent.Location = new System.Drawing.Point(358, 0);
-            this.ContactContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ContactContent.Name = "ContactContent";
-            this.ContactContent.Size = new System.Drawing.Size(1587, 1145);
-            this.ContactContent.TabIndex = 3;
-            this.ContactContent.Load += new System.EventHandler(this.ContactContent_Load);
+            this.HomeContent.Location = new System.Drawing.Point(270, 0);
+            this.HomeContent.Name = "HomeContent";
+            this.HomeContent.Size = new System.Drawing.Size(1600, 1145);
+            this.HomeContent.TabIndex = 4;
             // 
             // ShopContent
             // 
@@ -157,12 +155,14 @@
             this.ShopContent.Size = new System.Drawing.Size(1587, 1145);
             this.ShopContent.TabIndex = 2;
             // 
-            // HomeContent
+            // ContactContent
             // 
-            this.HomeContent.Location = new System.Drawing.Point(358, 0);
-            this.HomeContent.Name = "HomeContent";
-            this.HomeContent.Size = new System.Drawing.Size(1587, 1145);
-            this.HomeContent.TabIndex = 4;
+            this.ContactContent.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ContactContent.Location = new System.Drawing.Point(358, 0);
+            this.ContactContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ContactContent.Name = "ContactContent";
+            this.ContactContent.Size = new System.Drawing.Size(1587, 1145);
+            this.ContactContent.TabIndex = 3;
             // 
             // Form1
             // 
@@ -175,7 +175,6 @@
             this.Controls.Add(this.PanelMenu);
             this.Name = "Form1";
             this.Text = "PETONA";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.PanelMenu.ResumeLayout(false);
             this.PanelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
