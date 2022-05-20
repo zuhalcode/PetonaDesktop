@@ -111,12 +111,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Input Data Jual.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Input Data Jual.Designer.cs">
-      <DependentUpon>Input Data Jual.cs</DependentUpon>
-    </Compile>
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,9 +132,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Input Data Jual.resx">
-      <DependentUpon>Input Data Jual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
