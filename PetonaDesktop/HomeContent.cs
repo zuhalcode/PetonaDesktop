@@ -17,7 +17,13 @@ namespace PetonaDesktop
             InitializeComponent();
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void InputBarangButton_Click(object sender, EventArgs e)
+        {
+            new InputProdukContent().Show();
+            this.Hide();
+        }
+
+        private void HomeContent_Load(object sender, EventArgs e)
         {
 
         }
