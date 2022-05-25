@@ -1,6 +1,6 @@
 ﻿namespace PetonaDesktop
 {
-    partial class InputProdukContent
+    partial class PemesananContent
     {
         /// <summary> 
         /// Required designer variable.
@@ -53,13 +53,13 @@
             this.KembaliButton.UseVisualStyleBackColor = false;
             this.KembaliButton.Click += new System.EventHandler(this.KembaliButton_Click);
             // 
-            // InputProdukContent
+            // PemesananContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.KembaliButton);
-            this.Name = "InputProdukContent";
-            this.Size = new System.Drawing.Size(881, 547);
+            this.Name = "PemesananContent";
+            this.Size = new System.Drawing.Size(1343, 641);
             this.ResumeLayout(false);
 
         }

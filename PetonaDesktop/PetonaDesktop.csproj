@@ -123,6 +123,18 @@
     <Compile Include="InputProdukContent.Designer.cs">
       <DependentUpon>InputProdukContent.cs</DependentUpon>
     </Compile>
+    <Compile Include="PelangganContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PelangganContent.Designer.cs">
+      <DependentUpon>PelangganContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PemesananContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PemesananContent.Designer.cs">
+      <DependentUpon>PemesananContent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -150,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InputProdukContent.resx">
       <DependentUpon>InputProdukContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PelangganContent.resx">
+      <DependentUpon>PelangganContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemesananContent.resx">
+      <DependentUpon>PemesananContent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace PetonaDesktop
 {
-    public partial class InputProdukContent : UserControl
+    public partial class PemesananContent : UserControl
     {
-        public InputProdukContent()
+        public PemesananContent()
         {
             InitializeComponent();
-            
         }
 
         private void KembaliButton_Click(object sender, EventArgs e)
         {
-            this.SendToBack(); 
+            this.SendToBack();
         }
     }
 }

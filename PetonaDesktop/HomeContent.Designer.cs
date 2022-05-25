@@ -42,6 +42,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.CustomerButton = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.InputProdukContent = new PetonaDesktop.InputProdukContent();
+            this.PelangganContent = new PetonaDesktop.PelangganContent();
+            this.PemesananContent = new PetonaDesktop.PemesananContent();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -67,7 +70,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 58);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1237, 3);
+            this.panel1.Size = new System.Drawing.Size(1389, 3);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -161,6 +164,7 @@
             this.PemesananButton.Size = new System.Drawing.Size(424, 77);
             this.PemesananButton.TabIndex = 0;
             this.PemesananButton.UseVisualStyleBackColor = false;
+            this.PemesananButton.Click += new System.EventHandler(this.PemesananButton_Click);
             // 
             // iconPictureBox2
             // 
@@ -213,6 +217,7 @@
             this.CustomerButton.Size = new System.Drawing.Size(424, 77);
             this.CustomerButton.TabIndex = 0;
             this.CustomerButton.UseVisualStyleBackColor = false;
+            this.CustomerButton.Click += new System.EventHandler(this.CustomerButton_Click);
             // 
             // iconPictureBox3
             // 
@@ -227,11 +232,35 @@
             this.iconPictureBox3.TabIndex = 5;
             this.iconPictureBox3.TabStop = false;
             // 
+            // InputProdukContent
+            // 
+            this.InputProdukContent.Location = new System.Drawing.Point(10, 408);
+            this.InputProdukContent.Name = "InputProdukContent";
+            this.InputProdukContent.Size = new System.Drawing.Size(338, 109);
+            this.InputProdukContent.TabIndex = 5;
+            // 
+            // PelangganContent
+            // 
+            this.PelangganContent.Location = new System.Drawing.Point(226, 408);
+            this.PelangganContent.Name = "PelangganContent";
+            this.PelangganContent.Size = new System.Drawing.Size(292, 133);
+            this.PelangganContent.TabIndex = 6;
+            // 
+            // PemesananContent
+            // 
+            this.PemesananContent.Location = new System.Drawing.Point(439, 408);
+            this.PemesananContent.Name = "PemesananContent";
+            this.PemesananContent.Size = new System.Drawing.Size(242, 145);
+            this.PemesananContent.TabIndex = 7;
+            // 
             // HomeContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.PemesananContent);
+            this.Controls.Add(this.PelangganContent);
+            this.Controls.Add(this.InputProdukContent);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -239,8 +268,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "HomeContent";
-            this.Size = new System.Drawing.Size(1237, 645);
-            this.Load += new System.EventHandler(this.HomeContent_Load);
+            this.Size = new System.Drawing.Size(1389, 645);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
@@ -271,5 +299,8 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private InputProdukContent InputProdukContent;
+        private PelangganContent PelangganContent;
+        private PemesananContent PemesananContent;
     }
 }

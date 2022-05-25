@@ -1,6 +1,6 @@
 ﻿namespace PetonaDesktop
 {
-    partial class InputProdukContent
+    partial class PelangganContent
     {
         /// <summary> 
         /// Required designer variable.
@@ -47,19 +47,19 @@
             this.KembaliButton.Name = "KembaliButton";
             this.KembaliButton.Padding = new System.Windows.Forms.Padding(4, 0, 10, 0);
             this.KembaliButton.Size = new System.Drawing.Size(197, 55);
-            this.KembaliButton.TabIndex = 5;
+            this.KembaliButton.TabIndex = 4;
             this.KembaliButton.Text = "   Kembali";
             this.KembaliButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.KembaliButton.UseVisualStyleBackColor = false;
             this.KembaliButton.Click += new System.EventHandler(this.KembaliButton_Click);
             // 
-            // InputProdukContent
+            // PelangganContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.KembaliButton);
-            this.Name = "InputProdukContent";
-            this.Size = new System.Drawing.Size(881, 547);
+            this.Name = "PelangganContent";
+            this.Size = new System.Drawing.Size(879, 560);
             this.ResumeLayout(false);
 
         }

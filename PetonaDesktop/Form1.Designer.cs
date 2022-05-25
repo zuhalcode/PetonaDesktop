@@ -141,6 +141,7 @@
             // 
             // HomeContent
             // 
+            this.HomeContent.BackColor = System.Drawing.Color.White;
             this.HomeContent.Location = new System.Drawing.Point(270, 0);
             this.HomeContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HomeContent.Name = "HomeContent";
@@ -149,6 +150,7 @@
             // 
             // ShopContent
             // 
+            this.ShopContent.BackColor = System.Drawing.Color.White;
             this.ShopContent.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.ShopContent.Location = new System.Drawing.Point(358, 0);
             this.ShopContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -164,9 +166,6 @@
             this.ContactContent.Name = "ContactContent";
             this.ContactContent.Size = new System.Drawing.Size(1587, 1145);
             this.ContactContent.TabIndex = 3;
-            // 
-            // loginForms1
-            // 
             // 
             // Form1
             // 
