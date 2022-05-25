@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace PetonaDesktop
 {
-    public partial class HomeContent : UserControl
+    public partial class InputProdukContent : UserControl
     {
-        public HomeContent()
+        public InputProdukContent()
         {
             InitializeComponent();
+            
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

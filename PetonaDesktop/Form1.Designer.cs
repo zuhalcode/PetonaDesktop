@@ -142,6 +142,7 @@
             // HomeContent
             // 
             this.HomeContent.Location = new System.Drawing.Point(270, 0);
+            this.HomeContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HomeContent.Name = "HomeContent";
             this.HomeContent.Size = new System.Drawing.Size(1600, 1145);
             this.HomeContent.TabIndex = 4;
@@ -163,6 +164,9 @@
             this.ContactContent.Name = "ContactContent";
             this.ContactContent.Size = new System.Drawing.Size(1587, 1145);
             this.ContactContent.TabIndex = 3;
+            // 
+            // loginForms1
+            // 
             // 
             // Form1
             // 
