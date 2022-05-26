@@ -15,117 +15,57 @@ namespace PetonaDesktop
         public ContactContent()
         {
             InitializeComponent();
+
+            // mengatur posisi dari Background image
+            BackgroundImage.Location = new Point(3,14);
+            BackgroundImage.SizeMode = PictureBoxSizeMode.Zoom;
+            BackgroundImage.Size = new Size(1502, 596);
+            BackgroundImage.Dock = DockStyle.Top;
+
+            // mengatur posisi dan memberi border dari konten
+            FeedbackContent.Location = new Point(170, 178);
+            FeedbackContent.BorderStyle = BorderStyle.FixedSingle;
+
+            // mengatur posisi dari title
+            FeedbackTitle.Location = new Point(680, 88);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        // membuat background dari title menjadi transparan
         private void ContactContent_Load(object sender, EventArgs e)
         {
-            label2.Parent = pictureBox1;
-            label2.BackColor = Color.Transparent;
+            FeedbackTitle.Parent = BackgroundImage;
+            FeedbackTitle.BackColor = Color.Transparent;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        // merubah warna button dan cursor ketika cursor berada diatas tombol yes
+        private void YesButton_MouseHover(object sender, EventArgs e)
         {
+            YesButton.BackColor = Color.Lime;
+            YesButton.ForeColor = Color.White;
+            YesButton.Cursor = Cursors.Hand;
             
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        // mengembalikan cursor dan warna button keadaan semula
+        private void YesButton_MouseLeave(object sender, EventArgs e)
         {
-
-
+            YesButton.BackColor = Color.White;
+            YesButton.ForeColor = Color.Black;
         }
 
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        // merubah warna dan cursor ketika cursor berada diatas tombol no
+        private void NoButton_MouseHover(object sender, EventArgs e)
         {
-
+            NoButton.BackColor = Color.Lime;
+            NoButton.ForeColor = Color.White;
+            NoButton.Cursor = Cursors.Hand;
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        // mengembalikan cursor dan warna button keadaan semula
+        private void NoButton_MouseLeave(object sender, EventArgs e)
         {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_2(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click_1(object sender, EventArgs e)
-        {
-
+            NoButton.BackColor = Color.White;
+            NoButton.ForeColor = Color.Black;
         }
     }
 }
