@@ -17,8 +17,12 @@ namespace PetonaDesktop
 {
     public partial class ShopContent : UserControl
     {
-        string connStr = "server=sql6.freesqldatabase.com;port=3306;database=sql6492184;uid=sql6492184;pwd=MxvYZwjszD;";
+        // inisialisasi koneksi ke database
+        string connStr = "server=127.0.0.1;port=3366;database=petona;uid=root;";
+
+        // inisialiasi variabel koneksi mysql
         MySqlConnection conn;
+
         public ShopContent()
         {
             InitializeComponent();
@@ -45,15 +49,27 @@ namespace PetonaDesktop
             ScrollBar.Minimum = ShopFlowPanel.VerticalScroll.Minimum;
         }
 
+        // fungsi untuk scroll content
+        private void ScrollBar_Scroll_1(object sender, ScrollEventArgs e)
+        {
+            ShopFlowPanel.VerticalScroll.Value = ScrollBar.Value;
+        }
+
         // koneksi ke mysql
         private bool MysqlConnect()
         {
+            // menghubungkan variabel koneksi ke database mysql
             conn = new MySqlConnection(connStr);
+
+            // ketika sukses terhubung
             try
             {
+                // membuka koneksi database
                 conn.Open();
                 return true;
             }
+
+            // error handling ketika gagal terhubung
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -67,27 +83,24 @@ namespace PetonaDesktop
             conn.Close();
         }
 
-        // fungsi untuk scroll content
-        private void ScrollBar_Scroll_1(object sender, ScrollEventArgs e)
-        {
-            ShopFlowPanel.VerticalScroll.Value = ScrollBar.Value;
-        }
 
         // ketika ShopContent pertama kali diload
         private void ShopContent_Load(object sender, EventArgs e)
         {
+
             // cek koneksi mysql
             if (MysqlConnect())
             {
                 string query = "SELECT * FROM products where id>1"; // table query mysql
-                var cmd = new MySqlCommand(query, conn); // koneksi ke mysql
+                var cmd = new MySqlCommand(query, conn); // menjalankan query mysql
                 var reader = cmd.ExecuteReader(); // fungsi untuk read table mysql
-                
+
+
                 // read structure tabel products
                 while (reader.Read())
                 {
-                    // mengambil nama image
-                    string image = "http://127.0.0.1:8000/storage/" + reader.GetString(6);
+                // mengambil nama image
+                    string image = "http://localhost:8000/storage/" + reader.GetString(6);
 
                     // mengambil nama produk
                     string name = reader.GetString(2);
@@ -103,8 +116,10 @@ namespace PetonaDesktop
                     Panel newPanel = new Panel()
                     {
                         Width = 300,
-                        Height = 455,
+                        Height = 400,
                         BackColor = Color.White,
+                        BorderStyle = BorderStyle.FixedSingle,
+
                     };
 
                     // menempatkan panel
@@ -114,17 +129,19 @@ namespace PetonaDesktop
                     newPanel.Controls.Add(new PictureBox()
                     {
                         ImageLocation = image,
+                        Dock = DockStyle.Top,
                         Width = 300,
                         Height = 300,
                         SizeMode = PictureBoxSizeMode.Zoom,
-                        Size = new Size(300,200)
+                        Size = new Size(300, 200)
                     });
 
                     // membuat label nama produk
                     newPanel.Controls.Add(new Label()
                     {
                         Text = name,
-                        Location = new Point(81, 216),
+                        Location = new Point(75, 216),
+                        TextAlign = ContentAlignment.MiddleCenter,
                         Size = new Size(150, 29),
                         Font = new Font("Microsoft Sans Serif", 12)
 
@@ -135,6 +152,7 @@ namespace PetonaDesktop
                     {
                         Text = amount + " pieces",
                         Location = new Point(103, 245),
+                        TextAlign = ContentAlignment.MiddleCenter,
                         Size = new Size(77, 20),
                         Font = new Font("Microsoft Sans Serif", 8)
                     });
@@ -143,28 +161,17 @@ namespace PetonaDesktop
                     newPanel.Controls.Add(new Label()
                     {
                         Text = "Rp. " + price + " /kg",
-                        Location = new Point(67, 362),
-                        Width =  166,
+                        Location = new Point(67, 280),
+                        TextAlign = ContentAlignment.MiddleCenter,
+                        Width = 166,
                         Height = 29,
                         Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold)
                     });
 
-                    // membuat tombol
-                    newPanel.Controls.Add(new Button()
-                    {
-                        Text = "Masukkan Troli",
-                        Width = 202,
-                        Height = 31,
-                        Location = new Point(46, 399),
-                        Font = new Font("Microsoft Sans Serif", 8, FontStyle.Bold),
-                        ForeColor = Color.White,
-                        FlatStyle = FlatStyle.Flat,
-                        BackColor = Color.Green,
-                    });
 
                 }
 
-                // keluar koneksi mysql
+                //keluar koneksi mysql
                 MysqlDisconnect();
             }
         }

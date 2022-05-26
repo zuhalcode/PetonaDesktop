@@ -15,7 +15,6 @@ namespace PetonaDesktop
         public Form1()
         {
             InitializeComponent();
-
             // inisialisasi posisi awal setiap konten
             ShopContent.Location = new Point(270, 0);
             ShopContent.Size = new Size(1650, 1145);

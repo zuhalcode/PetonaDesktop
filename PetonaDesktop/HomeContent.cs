@@ -15,16 +15,37 @@ namespace PetonaDesktop
         public HomeContent()
         {
             InitializeComponent();
+
+            // inisialisasi posisi dan ukuran dari konten input produk, pemesanan, pelanggan
+            InputProdukContent.SendToBack();
+            InputProdukContent.Location = new Point(0,0);
+            InputProdukContent.Size = new Size(1600, 1145);
+
+            PelangganContent.SendToBack();
+            PelangganContent.Location = new Point(0,0);
+            PelangganContent.Size = new Size(1600,1145);
+
+            PemesananContent.SendToBack();
+            PemesananContent.Location = new Point(0,0);
+            PemesananContent.Size = new Size(1600,1145);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void InputBarangButton_Click(object sender, EventArgs e)
         {
-
+            // tampilkan InputProdukContent
+            InputProdukContent.BringToFront();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void PemesananButton_Click(object sender, EventArgs e)
         {
+            // tampilkan PemesananContent
+            PemesananContent.BringToFront();
+        }
 
+        private void CustomerButton_Click(object sender, EventArgs e)
+        {
+            // tampilkan PelangganContent
+            PelangganContent.BringToFront();
         }
     }
 }

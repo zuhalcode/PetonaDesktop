@@ -147,14 +147,16 @@
             // 
             // HomeContent
             // 
-            this.HomeContent.Location = new System.Drawing.Point(180, 0);
-            this.HomeContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HomeContent.BackColor = System.Drawing.Color.White;
+            this.HomeContent.Location = new System.Drawing.Point(270, 0);
+            this.HomeContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HomeContent.Name = "HomeContent";
             this.HomeContent.Size = new System.Drawing.Size(1067, 744);
             this.HomeContent.TabIndex = 4;
             // 
             // ShopContent
             // 
+            this.ShopContent.BackColor = System.Drawing.Color.White;
             this.ShopContent.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.ShopContent.Location = new System.Drawing.Point(239, 0);
             this.ShopContent.Name = "ShopContent";
