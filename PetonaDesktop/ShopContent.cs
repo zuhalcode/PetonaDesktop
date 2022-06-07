@@ -40,13 +40,13 @@ namespace PetonaDesktop
         // Inisialisasi nilai maximum content untuk scrolling
         private void ShopFlowPanel_ControlAdded(object sender, ControlEventArgs e)
         {
-            ScrollBar.Maximum = ShopFlowPanel.VerticalScroll.Maximum;
+            ScrollBar.Maximum = ShopFlowPanel.VerticalScroll.Maximum ;
         }
 
         // Inisialisasi nilai minimum content untuk scrolling
         private void ShopFlowPanel_ControlRemoved(object sender, ControlEventArgs e)
         {
-            ScrollBar.Minimum = ShopFlowPanel.VerticalScroll.Minimum;
+            ScrollBar.Minimum = ShopFlowPanel.VerticalScroll.Minimum ;
         }
 
         // fungsi untuk scroll content
@@ -87,11 +87,10 @@ namespace PetonaDesktop
         // ketika ShopContent pertama kali diload
         private void ShopContent_Load(object sender, EventArgs e)
         {
-
             // cek koneksi mysql
             if (MysqlConnect())
             {
-                string query = "SELECT * FROM products where id>1"; // table query mysql
+                string query = "SELECT * FROM products where id>1 order by created_at desc"; // table query mysql
                 var cmd = new MySqlCommand(query, conn); // menjalankan query mysql
                 var reader = cmd.ExecuteReader(); // fungsi untuk read table mysql
 
@@ -99,8 +98,20 @@ namespace PetonaDesktop
                 // read structure tabel products
                 while (reader.Read())
                 {
-                // mengambil nama image
-                    string image = "http://localhost:8000/storage/" + reader.GetString(6);
+                    string image = "";
+
+                    if(reader.IsDBNull(6))
+                    {
+                        // gambar default ketika gambar pada DB tidak terdeteksi
+                        image = "E:\\default-product.jpg";
+                    } 
+
+                    else
+                    {
+                        // mengambil nama image
+                        image = "http://localhost:8000/storage/" + reader.GetString(6);
+                    }
+
 
                     // mengambil nama produk
                     string name = reader.GetString(2);
@@ -175,6 +186,7 @@ namespace PetonaDesktop
                 MysqlDisconnect();
             }
         }
+
     }
 }
 

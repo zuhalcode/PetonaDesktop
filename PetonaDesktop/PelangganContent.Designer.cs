@@ -59,7 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.KembaliButton);
             this.Name = "PelangganContent";
-            this.Size = new System.Drawing.Size(879, 560);
+            this.Size = new System.Drawing.Size(1089, 666);
             this.ResumeLayout(false);
 
         }

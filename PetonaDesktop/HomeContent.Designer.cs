@@ -234,9 +234,10 @@
             // 
             // InputProdukContent
             // 
+            this.InputProdukContent.BackColor = System.Drawing.Color.White;
             this.InputProdukContent.Location = new System.Drawing.Point(10, 408);
             this.InputProdukContent.Name = "InputProdukContent";
-            this.InputProdukContent.Size = new System.Drawing.Size(338, 109);
+            this.InputProdukContent.Size = new System.Drawing.Size(244, 82);
             this.InputProdukContent.TabIndex = 5;
             // 
             // PelangganContent

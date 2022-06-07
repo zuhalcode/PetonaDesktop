@@ -31,7 +31,7 @@ namespace PetonaDesktop
         private void ShopBtn_Click(object sender, EventArgs e)
         {
             ShopContent.BringToFront();
-           
+
         }
 
         // menempatkan konten ke posisi paling depan

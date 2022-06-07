@@ -1,9 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,19 +9,18 @@ using System.Windows.Forms;
 
 namespace PetonaDesktop
 {
-    public partial class PelangganContent : UserControl
+    internal class DBProduct
     {
         // inisialisasi koneksi ke database
         string connStr = "server=127.0.0.1;port=3366;database=petona;uid=root;";
 
         // inisialiasi variabel koneksi mysql
-        MySqlConnection conn;
+        public MySqlConnection conn;
 
-        // koneksi ke mysql
-        private bool MysqlConnect()
+        public bool MysqlConnect()
         {
             // menghubungkan variabel koneksi ke database mysql
-            conn = new MySqlConnection(connStr);
+            conn = new MySqlConnection("server=127.0.0.1;port=3366;database=petona;uid=root;");
 
             // ketika sukses terhubung
             try
@@ -42,19 +39,21 @@ namespace PetonaDesktop
         }
 
         // menutup koneksi mysql
-        private void MysqlDisconnect()
+        public void MysqlDisconnect()
         {
             conn.Close();
         }
 
-        public PelangganContent()
+        public void Display(String query, DataGridView dgv)
         {
-            InitializeComponent();
-        }
-
-        private void KembaliButton_Click(object sender, EventArgs e)
-        {
-            this.SendToBack();
+            string sql = query;
+            conn = new MySqlConnection("server=127.0.0.1;port=3366;database=petona;uid=root;");
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+            DataTable tbl = new DataTable();
+            adp.Fill(tbl);
+            conn.Close();
         }
     }
 }
+
