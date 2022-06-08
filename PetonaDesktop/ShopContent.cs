@@ -87,6 +87,17 @@ namespace PetonaDesktop
         // ketika ShopContent pertama kali diload
         private void ShopContent_Load(object sender, EventArgs e)
         {
+            DisplayProduct();
+        }
+
+        private void RefreshBtn_Click(object sender, EventArgs e)
+        {
+            ShopFlowPanel.Controls.Clear();
+            DisplayProduct();
+        }
+
+        private void DisplayProduct()
+        {
             // cek koneksi mysql
             if (MysqlConnect())
             {
@@ -100,11 +111,11 @@ namespace PetonaDesktop
                 {
                     string image = "";
 
-                    if(reader.IsDBNull(6))
+                    if (reader.IsDBNull(6))
                     {
                         // gambar default ketika gambar pada DB tidak terdeteksi
                         image = "E:\\default-product.jpg";
-                    } 
+                    }
 
                     else
                     {
@@ -186,7 +197,6 @@ namespace PetonaDesktop
                 MysqlDisconnect();
             }
         }
-
     }
 }
 

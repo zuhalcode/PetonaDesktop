@@ -32,6 +32,7 @@
             this.ScrollBar = new System.Windows.Forms.VScrollBar();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RefreshBtn = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // ShopFlowPanel
@@ -70,11 +71,33 @@
             this.panel1.Size = new System.Drawing.Size(1920, 3);
             this.panel1.TabIndex = 12;
             // 
+            // RefreshBtn
+            // 
+            this.RefreshBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(210)))), ((int)(((byte)(120)))));
+            this.RefreshBtn.FlatAppearance.BorderSize = 0;
+            this.RefreshBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RefreshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.RefreshBtn.ForeColor = System.Drawing.Color.White;
+            this.RefreshBtn.IconChar = FontAwesome.Sharp.IconChar.Redo;
+            this.RefreshBtn.IconColor = System.Drawing.Color.White;
+            this.RefreshBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.RefreshBtn.IconSize = 40;
+            this.RefreshBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.RefreshBtn.Location = new System.Drawing.Point(607, 3);
+            this.RefreshBtn.Name = "RefreshBtn";
+            this.RefreshBtn.Padding = new System.Windows.Forms.Padding(4, 0, 10, 0);
+            this.RefreshBtn.Size = new System.Drawing.Size(51, 50);
+            this.RefreshBtn.TabIndex = 13;
+            this.RefreshBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RefreshBtn.UseVisualStyleBackColor = false;
+            this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
+            // 
             // ShopContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.RefreshBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ScrollBar);
@@ -93,5 +116,6 @@
         private System.Windows.Forms.VScrollBar ScrollBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton RefreshBtn;
     }
 }

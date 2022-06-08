@@ -33,23 +33,10 @@
             this.FeedbackTitle = new System.Windows.Forms.Label();
             this.BackgroundImage = new System.Windows.Forms.PictureBox();
             this.FeedbackContent = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.NameInput = new System.Windows.Forms.TextBox();
+            this.FlowFeedbacks = new System.Windows.Forms.FlowLayoutPanel();
             this.label17 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NoButton = new FontAwesome.Sharp.IconButton();
             this.YesButton = new FontAwesome.Sharp.IconButton();
@@ -57,13 +44,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.FeedbackInput = new System.Windows.Forms.TextBox();
+            this.SubmitBtn = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundImage)).BeginInit();
             this.FeedbackContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -104,21 +88,12 @@
             // FeedbackContent
             // 
             this.FeedbackContent.BackColor = System.Drawing.Color.White;
-            this.FeedbackContent.Controls.Add(this.pictureBox5);
-            this.FeedbackContent.Controls.Add(this.pictureBox4);
-            this.FeedbackContent.Controls.Add(this.pictureBox3);
-            this.FeedbackContent.Controls.Add(this.iconButton4);
-            this.FeedbackContent.Controls.Add(this.panel3);
-            this.FeedbackContent.Controls.Add(this.panel2);
-            this.FeedbackContent.Controls.Add(this.label15);
-            this.FeedbackContent.Controls.Add(this.label14);
-            this.FeedbackContent.Controls.Add(this.label13);
-            this.FeedbackContent.Controls.Add(this.label12);
-            this.FeedbackContent.Controls.Add(this.label11);
-            this.FeedbackContent.Controls.Add(this.label10);
-            this.FeedbackContent.Controls.Add(this.label9);
-            this.FeedbackContent.Controls.Add(this.label8);
-            this.FeedbackContent.Controls.Add(this.label7);
+            this.FeedbackContent.Controls.Add(this.label16);
+            this.FeedbackContent.Controls.Add(this.SubmitBtn);
+            this.FeedbackContent.Controls.Add(this.label17);
+            this.FeedbackContent.Controls.Add(this.FeedbackInput);
+            this.FeedbackContent.Controls.Add(this.NameInput);
+            this.FeedbackContent.Controls.Add(this.FlowFeedbacks);
             this.FeedbackContent.Controls.Add(this.panel1);
             this.FeedbackContent.Controls.Add(this.pictureBox2);
             this.FeedbackContent.Controls.Add(this.label4);
@@ -129,195 +104,42 @@
             this.FeedbackContent.Size = new System.Drawing.Size(1320, 772);
             this.FeedbackContent.TabIndex = 3;
             // 
-            // pictureBox5
+            // NameInput
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(24, 600);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
+            this.NameInput.BackColor = System.Drawing.Color.White;
+            this.NameInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.NameInput.Location = new System.Drawing.Point(926, 349);
+            this.NameInput.Name = "NameInput";
+            this.NameInput.Size = new System.Drawing.Size(364, 48);
+            this.NameInput.TabIndex = 20;
             // 
-            // pictureBox4
+            // FlowFeedbacks
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(22, 472);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 340);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 43);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.Lime;
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(1065, 492);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(112, 35);
-            this.iconButton4.TabIndex = 17;
-            this.iconButton4.Text = "Submit";
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Location = new System.Drawing.Point(926, 422);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(364, 48);
-            this.panel3.TabIndex = 15;
+            this.FlowFeedbacks.Location = new System.Drawing.Point(38, 349);
+            this.FlowFeedbacks.Name = "FlowFeedbacks";
+            this.FlowFeedbacks.Size = new System.Drawing.Size(564, 369);
+            this.FlowFeedbacks.TabIndex = 19;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(16, 14);
+            this.label17.Location = new System.Drawing.Point(922, 407);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(78, 20);
             this.label17.TabIndex = 13;
             this.label17.Text = "Komentar";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Location = new System.Drawing.Point(926, 349);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(364, 48);
-            this.panel2.TabIndex = 14;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(16, 14);
+            this.label16.Location = new System.Drawing.Point(922, 317);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(51, 20);
             this.label16.TabIndex = 13;
             this.label16.Text = "Nama";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(82, 608);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 25);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Nazwa Dafa";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Silver;
-            this.label14.Location = new System.Drawing.Point(86, 642);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 20);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "3 days ago";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(78, 671);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(442, 22);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "\"Website ini mudah dimengerti untuk semua kalangan\"";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(81, 537);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(427, 22);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "\"Website ini menyediakan fitur yang sangat lengkap\"";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(84, 508);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 20);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "3 days ago";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(82, 409);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(515, 22);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "\"Website ini sangat bagus untuk membantu petani di indonesia\"";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(82, 377);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "3 days ago";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(78, 478);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 25);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Isa Iman";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(78, 349);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(181, 25);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Dzakkiyul ashifaa";
             // 
             // panel1
             // 
@@ -362,6 +184,7 @@
             this.YesButton.TabIndex = 1;
             this.YesButton.Text = "Yes";
             this.YesButton.UseVisualStyleBackColor = false;
+            this.YesButton.Click += new System.EventHandler(this.YesButton_Click);
             this.YesButton.MouseLeave += new System.EventHandler(this.YesButton_MouseLeave);
             this.YesButton.MouseHover += new System.EventHandler(this.YesButton_MouseHover);
             // 
@@ -411,6 +234,35 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Reviews";
             // 
+            // FeedbackInput
+            // 
+            this.FeedbackInput.BackColor = System.Drawing.Color.White;
+            this.FeedbackInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FeedbackInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.FeedbackInput.Location = new System.Drawing.Point(926, 437);
+            this.FeedbackInput.Multiline = true;
+            this.FeedbackInput.Name = "FeedbackInput";
+            this.FeedbackInput.Size = new System.Drawing.Size(364, 190);
+            this.FeedbackInput.TabIndex = 20;
+            // 
+            // SubmitBtn
+            // 
+            this.SubmitBtn.BackColor = System.Drawing.Color.White;
+            this.SubmitBtn.ForeColor = System.Drawing.Color.Black;
+            this.SubmitBtn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.SubmitBtn.IconColor = System.Drawing.Color.Black;
+            this.SubmitBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.SubmitBtn.Location = new System.Drawing.Point(1058, 638);
+            this.SubmitBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SubmitBtn.Name = "SubmitBtn";
+            this.SubmitBtn.Size = new System.Drawing.Size(112, 35);
+            this.SubmitBtn.TabIndex = 1;
+            this.SubmitBtn.Text = "Submit";
+            this.SubmitBtn.UseVisualStyleBackColor = false;
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
+            this.SubmitBtn.MouseLeave += new System.EventHandler(this.SubmitBtn_MouseLeave);
+            this.SubmitBtn.MouseHover += new System.EventHandler(this.SubmitBtn_MouseHover);
+            // 
             // ContactContent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -426,13 +278,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundImage)).EndInit();
             this.FeedbackContent.ResumeLayout(false);
             this.FeedbackContent.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -454,22 +299,11 @@
         private FontAwesome.Sharp.IconButton NoButton;
         private FontAwesome.Sharp.IconButton YesButton;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.FlowLayoutPanel FlowFeedbacks;
+        private System.Windows.Forms.TextBox NameInput;
+        private System.Windows.Forms.TextBox FeedbackInput;
+        private FontAwesome.Sharp.IconButton SubmitBtn;
     }
 }

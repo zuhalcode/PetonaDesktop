@@ -42,9 +42,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.CustomerButton = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.PemesananContent = new PetonaDesktop.PemesananContent();
             this.InputProdukContent = new PetonaDesktop.InputProdukContent();
             this.PelangganContent = new PetonaDesktop.PelangganContent();
-            this.PemesananContent = new PetonaDesktop.PemesananContent();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -150,7 +150,7 @@
             // 
             // PemesananButton
             // 
-            this.PemesananButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(155)))), ((int)(((byte)(11)))));
+            this.PemesananButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(141)))), ((int)(((byte)(7)))));
             this.PemesananButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PemesananButton.FlatAppearance.BorderSize = 0;
             this.PemesananButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -181,7 +181,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(70)))), ((int)(((byte)(255)))));
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.CustomerButton);
             this.panel4.Controls.Add(this.iconPictureBox3);
@@ -203,7 +203,7 @@
             // 
             // CustomerButton
             // 
-            this.CustomerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(0)))), ((int)(((byte)(213)))));
+            this.CustomerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(46)))), ((int)(((byte)(245)))));
             this.CustomerButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CustomerButton.FlatAppearance.BorderSize = 0;
             this.CustomerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -232,6 +232,13 @@
             this.iconPictureBox3.TabIndex = 5;
             this.iconPictureBox3.TabStop = false;
             // 
+            // PemesananContent
+            // 
+            this.PemesananContent.Location = new System.Drawing.Point(439, 408);
+            this.PemesananContent.Name = "PemesananContent";
+            this.PemesananContent.Size = new System.Drawing.Size(218, 64);
+            this.PemesananContent.TabIndex = 7;
+            // 
             // InputProdukContent
             // 
             this.InputProdukContent.BackColor = System.Drawing.Color.White;
@@ -242,17 +249,11 @@
             // 
             // PelangganContent
             // 
+            this.PelangganContent.BackColor = System.Drawing.Color.White;
             this.PelangganContent.Location = new System.Drawing.Point(226, 408);
             this.PelangganContent.Name = "PelangganContent";
-            this.PelangganContent.Size = new System.Drawing.Size(292, 133);
+            this.PelangganContent.Size = new System.Drawing.Size(207, 64);
             this.PelangganContent.TabIndex = 6;
-            // 
-            // PemesananContent
-            // 
-            this.PemesananContent.Location = new System.Drawing.Point(439, 408);
-            this.PemesananContent.Name = "PemesananContent";
-            this.PemesananContent.Size = new System.Drawing.Size(242, 145);
-            this.PemesananContent.TabIndex = 7;
             // 
             // HomeContent
             // 
@@ -301,7 +302,7 @@
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private InputProdukContent InputProdukContent;
-        private PelangganContent PelangganContent;
         private PemesananContent PemesananContent;
+        private PelangganContent PelangganContent;
     }
 }

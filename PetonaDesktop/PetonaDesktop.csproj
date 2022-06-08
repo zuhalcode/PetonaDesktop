@@ -99,7 +99,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBProduct.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ContactContent.cs">
       <SubType>UserControl</SubType>
